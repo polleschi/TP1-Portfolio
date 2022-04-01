@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    flex: auto;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagenes/backgrounda.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.navegadorHijo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.spanLogo {
+    color: orangered;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: orangered;
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+.btn {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.btn:hover {
+    box-shadow: 0 0px 20px 3px rgba(0, 0, 0, 0.61);
+    transform: scale(1.2);
+}
+
+/* MEDIA QUARYS */
+
+@media(max-width:1280px) {
+    body{
+        font-size: 14px;
+        background-image: url(../imagenes/cellphonepaper.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .navegadorHijo {
+        margin-left: 4%;
+        margin-right: 2%;
+    }
+
+}
+
+@media(max-width:900px) {
+    body{
+        font-size: 14px;
+        background-image: url(../imagenes/cellphonepaper.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .header {
+        height: auto;
+        transition: .2s;
+    }   
+    .logo{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    .list{
+        display: flex;
+        transition: .2s linear;
+    }
+    nav ul li {
+        padding: 8px 20px;
+        display: block;
+        transition: .2s linear;
+    }
+    .display li{        
+        transition: .2s linear;
+        width: 0px;
+        height: 0px;
+        overflow:hidden;
+        padding:0;
+        margin:0;
+        border:0;       
+    }
+    .icon {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border: 2px solid red;
+        border-radius: 50%;
+        margin-left: auto;
+    }
+    .icon--active {
+        background-color: red;
+        
+    }
+}
+
+@media(max-width:740px) {
+    body{
+        font-size: 14px;
+        
+        background-image: url(../imagenes/cellphonepaper.jpg);
+    }
+    .header {
+        height: auto;
+        transition: .2s;
+    }   
+    .logo{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    .list{
+        display: flex;
+        transition: .2s linear;
+    }
+    nav ul li {
+        padding: 8px 20px;
+        display: block;
+        transition: .2s linear;
+    }
+    .display li{        
+        transition: .2s linear;
+        width: 0px;
+        height: 0px;
+        overflow:hidden;
+        padding:0;
+        margin:0;
+        border:0;       
+    }
+    .icon {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border: 2px solid red;
+        border-radius: 50%;
+        margin-left: auto;
+    }
+    .icon--active {
+        background-color: red;
+    }
+}
+
+
+/* cards */
+
+.card {
+    margin: 200px;
+    transition: 0.4s;
+    opacity: 97%;
+}
+.card:hover {
+    box-shadow: 0 0px 40px 5px rgba(0, 0, 0, 0.61);
+    transform: scale(1.1);
+}
+
+.cardContainer {
+    padding: 2px 16px;
+}
+
+.bordesRedondeados {
+    border-radius: 100px;
+}
+
+
+.imgSmall {
+    width: 600spx;
+    height: 400px;
+}
+
+
+
+.mainIndex {
+    position: relative;
+}
+
+/*ABOUT US */
+
+.aboutUsContainer {
+    width: 100%;
+    min-height: 50vw;
+    
+    position: relative;
+    display: block;
+    margin: auto ;
+}
+
+.aboutUsContent {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-gap: 40px;
+    margin: 30px auto;
+}
+
+.aboutUsArticle {
+    padding: 25px 25px;
+    
+    
+}
+
+.aboutUsArticle h2 {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+}
+
+.aboutUsArticle p {
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutUsContent .aboutUsArticle a{
+    font-size: 22px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 25px;
+    background-color: orangered;
+    letter-spacing: 1.5px;
+    margin-top: 40px;
+}
+
+.aboutUsImg {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+.aboutUsImg img {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Skills Cards */
+
+.containerSkills {
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-gap: 20px;
+    margin-bottom: 250px;
+    margin-top: 250px;
+    
+}
+
+.skillCards {
+    background-color: black;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    opacity: 85%;
+    margin-left: 80px;
+    margin-right: 80px;
+    transition: 0.4s;
+}
+
+.skillCards:hover {
+    box-shadow: 0 0px 40px 5px rgba(0, 0, 0, 0.61);
+    transform: scale(1.1);
+}
+
+.skillCardsImg {
+    height: 225px;
+    background-color: red;
+    border-radius: 30px;
+}
+
+.skillCards .img-one {
+    background-image: url(../imagenes/htmlimg.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+.skillCards .img-two {
+    background-image: url(../imagenes/estilocss.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+.skillCards .img-three {
+    background-image: url(../imagenes/gitimag.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+.cardsContent {
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    
+}
+
+.cardsContent h2{
+    letter-spacing: 1.5px;
+}
+
+.cardsContent h3{
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.cardsContent p{
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    margin-top: 40px;
+    position: sticky;
+    background-color: black;
+    padding: 10px;
+}
+
+.footerHijo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 44%;
+    padding-right: 0%;
+    flex-wrap: wrap;
+}
+
+
+
+
